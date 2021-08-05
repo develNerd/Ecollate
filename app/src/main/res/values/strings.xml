@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Ecollation</string>
+    <string name="user_name">User Name</string>
+    <string name="password">password</string>
+    <string name="next">Login</string>
+    <string name="take_a_picture">Scan Document</string>
+    <string name="note">Scan the Provided Document with the Camera View…</string>
+    <string name="doc"> Document Seems to be fake. faking of Documents will lead to very Serious Charges. Please provide only Authentic Document</string>
+</resources>

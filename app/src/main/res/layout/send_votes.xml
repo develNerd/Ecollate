@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <RelativeLayout
+        android:padding="15dp"
+        android:layout_centerInParent="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/ico_okay"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/alert"
+            android:layout_centerHorizontal="true"/>
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/ico_okay"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/holo_green_light"
+            android:id="@+id/warning"
+            android:textSize="20sp"
+            android:text="Confirmation!"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:layout_marginTop="50dp"
+            android:layout_below="@+id/warning"
+            android:layout_width="match_parent"
+            android:textAlignment="center"
+            android:layout_height="wrap_content"
+            android:id="@+id/Message"
+            android:text="You are about to send the votes to our server. Please verify votes before sending"
+            android:gravity="center"/>
+
+
+        <Button
+            android:layout_below="@+id/Message"
+            app:iconSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Okay"
+            app:iconTint="@color/colorTextSecondary"
+            android:textAllCaps="false"
+            app:iconPadding="10dp"
+            android:id="@+id/okay"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            />
+
+        <Button
+            android:visibility="gone"
+            android:layout_below="@+id/Message"
+            app:iconSize="16dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="Send Votes"
+            app:iconTint="@color/colorTextSecondary"
+            android:textAllCaps="false"
+            app:iconPadding="10dp"
+            android:id="@+id/sendVotes"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon"
+            android:textColor="@color/colorPrimary"
+            android:layout_centerHorizontal="true"
+            />
+
+        <CheckBox
+            android:visibility="gone"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/comment"
+            android:layout_width="wrap_content"
+            android:id="@+id/checkbox"
+            android:checked="true"
+            android:textColor="@color/colorTextSecondary"
+            android:text="Don't Show this Again"
+            android:layout_height="wrap_content"/>
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+</RelativeLayout>

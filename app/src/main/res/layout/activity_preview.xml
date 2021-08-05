@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreviewActivity">
+
+   <LinearLayout
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:weightSum="10"
+       android:orientation="vertical">
+
+      <RelativeLayout
+          android:padding="50dp"
+          android:id="@+id/image"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="2">
+
+         <ImageView
+             android:layout_width="100dp"
+             android:layout_height="100dp"
+             android:layout_centerInParent="true"
+             android:src="@drawable/seal"/>
+
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_gravity="center"
+          android:gravity="center"
+          android:id="@+id/weit"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_weight="5"
+          android:padding="30dp"
+          >
+
+         <RelativeLayout
+             android:id="@+id/first"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Votes for NPP"/>
+
+            <TextView
+                android:id="@+id/npp"
+                android:layout_alignParentEnd="true"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Document ID"/>
+
+         </RelativeLayout>
+
+
+         <RelativeLayout
+             android:layout_marginTop="30dp"
+             android:id="@+id/second"
+             android:layout_below="@+id/first"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ttal Votes for NDC"/>
+
+            <TextView
+                android:id="@+id/ndc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="2020" />
+
+         </RelativeLayout>
+
+         <RelativeLayout
+             android:layout_marginTop="30dp"
+             android:id="@+id/third"
+             android:layout_below="@+id/second"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Total Votes for CPP" />
+
+            <TextView
+                android:id="@+id/cpp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:text="Mamalian" />
+
+         </RelativeLayout>
+
+
+
+
+
+
+      </RelativeLayout>
+
+      <RelativeLayout
+          android:layout_width="match_parent"
+          android:layout_weight="3"
+          android:layout_height="0dp">
+
+         <TextView
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textSize="50dp"
+            android:text="42400216"/>
+
+         <Button
+             android:layout_margin="20sp"
+             android:layout_alignParentBottom="true"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="Quit App"
+             android:layout_centerInParent="true"
+             android:textAllCaps="false"
+             android:id="@+id/contin"
+             android:backgroundTint="@color/colorPrimary"
+             style="@style/Widget.MaterialComponents.Button.TextButton"
+             android:textColor="@android:color/white"/>
+
+
+
+      </RelativeLayout>
+
+
+
+   </LinearLayout>
+
+</RelativeLayout>

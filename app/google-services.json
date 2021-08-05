@@ -1,0 +1,130 @@
+{
+  "project_info": {
+    "project_number": "689127135999",
+    "firebase_url": "https://ecollation-b04f8.firebaseio.com",
+    "project_id": "ecollation-b04f8",
+    "storage_bucket": "ecollation-b04f8.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689127135999:android:92106f1c75624b10330aca",
+        "android_client_info": {
+          "package_name": "com.natigbabayev.qrscanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689127135999-f9o8h4tk7114bbc5s8jn7fuiqj0ra87t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.natigbabayev.qrscanner",
+            "certificate_hash": "01eab4bba3eb1ea5b9a3aa58465a32279b879075"
+          }
+        },
+        {
+          "client_id": "689127135999-umts7vif9pkeutu979v89qqfm9o0o5un.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA59plmoWx_7It0_3lx-1CYrzA1GFR4WKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689127135999-umts7vif9pkeutu979v89qqfm9o0o5un.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689127135999:android:b61ca3cbbb218038330aca",
+        "android_client_info": {
+          "package_name": "org.flepper.ecollation"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689127135999-6hl4pi5fa0o0oqud67ma4o5f63tv9ljv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.flepper.ecollation",
+            "certificate_hash": "120324a590d54d73b0ecfc6e8dd0bdae21223ef6"
+          }
+        },
+        {
+          "client_id": "689127135999-uhl8h47tao426139u49n8f6adl6p33c5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "org.flepper.ecollation",
+            "certificate_hash": "01eab4bba3eb1ea5b9a3aa58465a32279b879075"
+          }
+        },
+        {
+          "client_id": "689127135999-umts7vif9pkeutu979v89qqfm9o0o5un.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA59plmoWx_7It0_3lx-1CYrzA1GFR4WKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689127135999-umts7vif9pkeutu979v89qqfm9o0o5un.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:689127135999:android:4e1d84acbf3223cd330aca",
+        "android_client_info": {
+          "package_name": "pranay.com.cameraxapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "689127135999-0rj5etuvdgoee8gg2jh4hl67747o4svf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "pranay.com.cameraxapp",
+            "certificate_hash": "01eab4bba3eb1ea5b9a3aa58465a32279b879075"
+          }
+        },
+        {
+          "client_id": "689127135999-umts7vif9pkeutu979v89qqfm9o0o5un.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA59plmoWx_7It0_3lx-1CYrzA1GFR4WKY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "689127135999-umts7vif9pkeutu979v89qqfm9o0o5un.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

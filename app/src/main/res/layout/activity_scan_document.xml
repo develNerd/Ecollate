@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_above="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/last"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:padding="20sp"
+        android:layout_alignParentBottom="true"
+        android:background="#D3000000">
+
+        <Button
+            android:visibility="gone"
+            android:layout_marginTop="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:text="Take Picture"
+            android:layout_centerInParent="true"
+            android:textAllCaps="false"
+            android:id="@+id/capture_but"
+            style="@style/Widget.MaterialComponents.Button"
+            android:backgroundTint="@android:color/white"
+            android:textColor="@color/colorPrimaryDark"/>
+
+        <TextView
+            android:id="@+id/txtscanDocument"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Place Camera on QR Code"
+            android:layout_centerInParent="true"
+            android:textColor="@android:color/white"/>
+
+
+        <ImageView
+            android:id="@+id/imageButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/ic_flash_on_24dp"/>
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:id="@+id/transition_group">
+
+        <com.mikhaellopez.circularprogressbar.CircularProgressBar
+            android:id="@+id/circularProgressBar"
+            android:visibility="invisible"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            app:cpb_indeterminate_mode="true"
+            app:cpb_background_progressbar_color="#b6bbd8"
+            app:cpb_background_progressbar_width="5dp"
+            app:cpb_progress_direction="to_right"
+            app:cpb_progressbar_color="#3f51b5"
+            app:cpb_progressbar_width="10dp"
+            app:cpb_round_border="false" />
+
+        <TextView
+            android:visibility="invisible"
+            android:id="@+id/analysing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circularProgressBar"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:text="Analysing QR code....."/>
+
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/analysings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/circularProgressBar"
+            android:layout_marginTop="50dp"
+            android:textColor="@android:color/white"
+            android:text="Decrypting QR Code....."/>
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/backgroung"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true">
+
+        <ImageView
+            android:id="@+id/dotanim"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/rounddot"/>
+
+
+        <ImageView
+            android:id="@+id/boundingBox"
+            android:layout_width="250dp"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:src="@drawable/scan_box1"/>
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/timer"
+            android:layout_width="85dp"
+            android:layout_height="85dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/countdown_drawable">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/mTextField"
+                android:text="1"
+                android:textSize="45sp"
+                android:layout_centerInParent="true"
+                android:textColor="@android:color/white"/>
+
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+
+
+    <!--Make TextureView in Center-->
+
+
+
+</RelativeLayout>
